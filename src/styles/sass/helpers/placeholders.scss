@@ -1,0 +1,44 @@
+%container{
+	margin: 0 auto;		
+	max-width: 950px;
+    width: 100%;
+}
+%font{
+	color: $color;
+	font-size: 12.04px;
+}
+
+%structure-basic {
+	width: 100%;
+	float: left;
+}
+
+%tag {
+    padding: 3px 15px 3px 15px;
+    float: left;
+    background-color: #b5b5b5;
+    color: #fff;
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+%title-history {
+    font-size: 14px;
+    color: #4b9368;
+}
+
+%list-history{
+    color: #585858;
+    font-size: 11px;
+    margin-top: 10px;
+    list-style-type: disc;
+    -webkit-padding-start: 18px;
+}
+
+%title-submenu{
+    @extend %title-history;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+    font-size: 16px;
+}

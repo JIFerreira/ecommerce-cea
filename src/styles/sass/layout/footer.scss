@@ -1,0 +1,81 @@
+footer{
+
+	@extend %structure-basic;
+	background: $background-title-showcase;
+	
+	.container-footer{
+		@extend %container;
+		max-height: 212px;
+		height: 100%;
+
+		.payment {
+			max-width: 390px;
+			width: 100%;
+			height: 100%;
+			float: left;
+			// border: 1px solid #000;
+		}
+
+		.menu-footer{
+			max-width: 550px;
+			width: 100%;
+			height: 174px;
+			float: right;
+			padding-top: 25px;
+			// border: 1px solid #000;
+
+			.submenu-left{
+				float: left;
+			    width: 66%;
+				.menu{
+
+    				width: 100%;
+					float: left;
+					.institucional{
+							@include format-submenu(left, 50%);
+						
+						.title-inst{
+							@extend %title-submenu;
+						}
+						a{
+						    color: $color-pattern-green;
+							text-decoration: none;
+						}
+					}
+
+					.atendimento {
+						@include format-submenu(right, 50%);
+
+						.title-atend{
+							@extend %title-submenu;
+						}
+						a{
+						    color: $color-pattern-green;
+							text-decoration: none;
+						}
+					}
+				}
+				.links{
+					width: 80%;
+					float: left;
+					margin:  15px 0;
+				}
+			}
+
+			.submenu-right{
+				float: right;
+				.servicos{
+					@include format-submenu(left, 174px);
+
+					.title-serv{
+						@extend %title-submenu;
+					}
+					a{
+					    color: $color-pattern-green;
+						text-decoration: none;
+					}					
+				}
+			}
+		}
+	}
+}

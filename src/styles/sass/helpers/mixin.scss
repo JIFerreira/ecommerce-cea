@@ -1,0 +1,44 @@
+@mixin input-search($size) {
+	width: $size;
+	height: 18px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+	background: $background-input;
+    border: 2px solid $color-inputs;
+}
+
+
+@mixin button-submit($size){
+	width: $size;
+	color: #fff;
+	padding: 7px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: $button-color;
+	border: 2px solid $border-buttons;
+}
+
+@mixin container{
+	margin: 0 auto;		
+	max-width: 950px;
+    width: 100%;
+}
+
+@mixin titles($width, $padding-width,$padding-height) {
+	width: $width;
+	padding: $padding-height $padding-width; 
+	float: left;
+	background-color: $background-title-showcase;
+	color: $color-pattern-green;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+@mixin format-submenu($float, $width){
+    width:  $width;
+    height: 100%;
+    float: $float;
+    font-size: 12px;
+    line-height: 16px;
+}

@@ -1,0 +1,138 @@
+.products-visited{
+	width: 100%;
+	float: left;
+	margin-bottom: 50px;
+
+	.container-visited{
+		width: 100%;
+		float: left;
+		height: 100%;
+
+		.title-visited{
+			@include titles(100%, 10px, 5px);
+		}
+
+		.cases-visited{
+			width: 100%;
+			float: left;
+			position: relative;
+			padding-top: 30px;
+			.directions-slider{
+		        float: left;
+		        width:  100%;
+		        position:  absolute;
+		        margin-left: 10px;
+		        top: 50%;
+				.arrow-left{
+		          width: 50px;
+		          float: left;
+		          margin: 0;
+				}
+
+				.arrow-right{
+		          float:  right;
+		          width:  50px;
+		          margin: 0;
+				}
+			}
+
+			ul{
+				width: 80%;
+				margin: 0 auto;
+				height: 100%;
+				li{
+					width: 186px;
+				    height: 343px;
+    				display: inline-block;
+    				margin: 0;
+					.button-buy{
+						display: none;
+					}			        
+
+				    .image {
+	    	    		text-align: center;
+					 	height: 139px;
+
+						img {
+							width: 130px;
+						}
+				    }
+
+					.tag {
+						@extend %tag;
+					}
+
+				    .description {
+						padding: 10px 12px;
+						float: left;
+						position: absolute;
+					    bottom: 0;
+					    height: 163px;
+
+						.product-title {
+							@extend %structure-basic;
+						    font-weight: bold;
+						    margin: 10px 0;
+						    width: 158px;
+						    line-height: 18px;							    
+						}
+
+						.product-resume {
+							font-size: 12px;
+							color: $colo-font;
+						    width: 158px;
+						    line-height: 13px;								
+						}
+
+						.product-price {
+						    width: 158px;
+						    height: 42px;
+						    line-height: 18px;
+						    position: absolute;
+						    bottom: 30px;
+							.old-price{
+								color: $colo-font;
+								margin-top: 5px;
+								margin-bottom: 5px;
+								font-size: 14px;
+							}
+							.new-price{
+								font-weight: bold;
+								font-size: 14px;
+								color: $color-pattern-green;
+							}
+						}
+
+						.product-more {
+							float: left;
+						    bottom: 11px;
+						    position: absolute;							
+							a{
+								text-decoration: none;
+								color: $color-pattern-green;
+								border-bottom: 1px solid $color-pattern-green;
+							}
+						}
+
+				    }
+				    &:hover{
+				    	padding-top: 10px;
+				    	background-color: #f4fff9;
+    					box-shadow: 1px 2px 5px #b1b1b1;
+
+    					.button-buy{
+							width: 100%;
+						    height: 37px;
+						    display: block;
+						    background: url(../../image/button-buy.png) no-repeat center/140px;
+    					}
+
+    					.tag{
+    						display: none;
+    					}
+				    }
+				}
+			}
+		}
+	}
+}

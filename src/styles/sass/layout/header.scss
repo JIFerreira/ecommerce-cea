@@ -1,0 +1,145 @@
+header{
+	height: 125px;
+	max-height: 140px;
+	border-bottom: 1px solid #ccc;
+    
+    
+	.container-header {
+		@extend %container;
+	
+		.logo{
+			max-width: 256px;
+			float: left;
+	
+			img{
+				width: 100%;
+				float: left;
+			}
+		}
+
+		.search-and-authentication{
+			width: 100%;
+		    float: left;
+		    max-width: 400px;
+		    padding: 20px 0px 20px 35px;
+
+			.person {
+				float: left;
+				.welcome{
+					width: 100%;
+					margin-bottom: 7px;
+					float: left;
+					p {
+						@extend %font;
+					}
+				}
+
+				.authentication {
+					width: 100%;
+					margin-bottom: 20px;
+					float: left;
+					p {
+						@extend %font;
+						a {
+							color: $color-pattern-green;
+						}
+					}					
+				}
+			}
+
+			.search{
+				float: left;
+				input[type="text"]{
+					@include input-search(300px);
+
+					&:focus{
+						background-color: #fff;
+					}
+				}
+
+				button[type="button"]{
+					@include button-submit(71px);
+				}
+			}
+		}
+
+		.bought{
+		    width: 100%;
+		    float: left;
+		    padding-top: 5px;
+		    max-width: 224px;
+		    padding-left: 16px;
+			.shopping-bag{
+				width: 100%;
+				float: left;
+				.bag{
+					float: left;
+					margin-right: 5px;
+					max-width: 36px;
+					img{
+						width: 100%;
+						float: left;
+					}
+				}
+
+				.bag-description{
+				    top: 13px;
+				    float: left;
+					font-size: 11px;
+				    position: relative;
+				    padding-bottom: 4px;
+					border-bottom: 1px dashed $color-pattern-green;
+					.title{
+						font-size: 15px;
+						color: $color-pattern-green;
+					}
+				}
+			}
+
+			.menu-options{
+				width: 100%;
+				float: left;
+				margin-top: 14px;
+				ul{
+					text-decoration: none;
+					li{
+						display: inline-block;
+						font-size: 12px;
+						a{
+							text-decoration: none;
+							@extend %font;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.menu{
+		width: 100%;
+		height: 100%;
+		float: left;
+		max-height: 59px;
+		background-color: $color-pattern-green;
+		.container-menu {
+			@extend %container;
+			ul{
+				margin: 0 auto;
+				li{
+					display: inline-block;
+				    padding: 21px 35px;
+					a{
+						color: #fff;
+						text-decoration: none;
+						&:hover{
+							color: $color-active-green;
+						}
+					}
+					&:hover{
+						background-color: $background-active;
+					}
+				}
+			}
+		}
+	}
+}

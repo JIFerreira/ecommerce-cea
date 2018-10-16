@@ -1,0 +1,125 @@
+.lead{
+	width: 100%;
+	height: 100%;
+	max-height: 208px;
+	float: left;
+	.signup-gifts{
+		width: 100%;
+		float: left;
+		height: 35px;
+		margin-bottom: 9px;
+		background-color: $color-pattern-green;
+
+		.icon-card{
+			float: left;
+			margin-left: 10px;
+		}
+
+		.title-lead{
+		      float: left;
+		      padding: 8px 20px;
+		      font-size: 19px;
+		      color: #fff;		
+  		}
+
+		.inputs{
+		      float: left;
+		      width: 56%;
+		      padding: 5px 0px 0px 24px;
+			input{
+		        float: left;
+		        width: 41%;
+		        margin-right: 8px;
+		        padding-left: 8px;
+		        height: 19px;
+		        background: #fbfcf7;
+			}
+
+			button{
+		        float: left;
+		        background: #70ae71;
+		        padding: 3px 10px;
+		        color: #fff;
+		        border: 2px solid #5c875f;
+			}
+		}
+	}
+	.history{
+		width: 100%;
+		float: left;
+		.last-products-words{
+			width: 45%;
+			float: left;
+			height: 100%;
+			max-height: 150px;
+			padding: 15px;
+			border: 1px dashed #7d9675;
+			.last-products-visited{
+			    width: 65%;
+			    float: left;
+			    line-height: 17px;
+				.title-last-pvisited{
+					@extend %title-history;
+				}
+
+				ul{
+					@extend %list-history;
+				}
+			}
+
+			.last-searched{
+				width: 35%;
+				float: left;
+			    line-height: 17px;
+				.title-last-search{
+					@extend %title-history;
+				}
+				ul{
+					@extend %list-history;
+				}
+
+			}
+		}
+
+		.social-media{
+			width: 45%;
+			float: right;
+			height: 100%;
+			max-height: 150px;
+			padding: 27px;
+			background: #e1e1e1;
+			.tile-last-pvisited{
+				@extend %title-history;
+				width: 100%;
+				float: left;
+			    font-weight: bold;
+
+			}
+			
+			ul{
+				width: 48%;
+				margin-top: 20px;
+				float: left;
+				li{
+					width: 36px;
+					display: inline-block;
+					img{
+						width: 100%;
+						float: left;
+					}
+				}
+			}
+
+			> a{
+				width: 130px;
+				float: right;
+				margin-top: 15px;
+				img{
+					width: 100%;
+					float: left;
+				}
+			}
+
+		}
+	}
+}
